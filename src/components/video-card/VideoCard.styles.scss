@@ -1,0 +1,71 @@
+.videocard {
+  width: 500px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+
+    & .img_frame .img {
+      transition: transform 6s ease-in;
+      transform: scale(1.1);
+      position: absolute;
+    }
+
+    & .videocard__info .videocard__info__stats {
+      display: flex;
+    }
+  }
+
+  .img_frame {
+    flex: 0.65;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+
+    .img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .videocard__info {
+    padding: 1rem;
+
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: block;
+
+    h4 {
+      margin-top: 1rem;
+    }
+
+    .videocard__info__stats {
+      padding: 0.5rem;
+      width: 40%;
+
+      display: none;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      & span .MuiSvgIcon-root {
+        font-size: 16px !important;
+        color: pink;
+      }
+    }
+  }
+}

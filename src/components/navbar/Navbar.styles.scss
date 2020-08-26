@@ -1,0 +1,39 @@
+.navbar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+
+  color: white;
+  overflow-x: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  h2 {
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: transform 50ms ease-out;
+
+    &:first-child {
+      margin-left: 0rem;
+    }
+
+    &:last-child {
+      margin-right: 0rem;
+    }
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
